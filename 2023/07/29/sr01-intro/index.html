@@ -9,7 +9,7 @@
     
     <title>
         
-            Hello World |
+            StarRocks01 介绍StarRocks |
         
         Connor&#39;s Tech Home
     </title>
@@ -146,7 +146,7 @@
         <div class="article-content-container">
 
             <div class="article-title">
-                <span class="title-hover-animation">Hello World</span>
+                <span class="title-hover-animation">StarRocks01 介绍StarRocks</span>
             </div>
 
             
@@ -168,13 +168,13 @@
         
             <i class="fa-regular fa-calendar-plus"></i>&nbsp;
         
-        <span class="pc">2023-07-28 17:29:17</span>
-        <span class="mobile">2023-07-28 17:29</span>
+        <span class="pc">2023-07-29 19:34:53</span>
+        <span class="mobile">2023-07-29 19:34</span>
     </span>
     
         <span class="article-update-date article-meta-item">
         <i class="fas fa-file-pen"></i>&nbsp;
-        <span class="pc">2023-07-28 17:29:17</span>
+        <span class="pc">2023-07-29 19:56:06</span>
     </span>
     
     
@@ -194,20 +194,34 @@
             <div class="article-content keep-markdown-body">
                 
 
-                <p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fas fa-external-link-alt"></i></a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html" >Writing<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/server.html" >Server<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html" >Generating<i class="fas fa-external-link-alt"></i></a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fas fa-external-link-alt"></i></a></p>
-
+                <h2 id="什么是-StarRocks"><a href="#什么是-StarRocks" class="headerlink" title="什么是 StarRocks"></a>什么是 StarRocks</h2><p>StarRocks是<strong>次世代极速全场景的 MPP</strong>（Massively Parallel Processing）数据库，产品目标是让<strong>数据分析变得快速和简单</strong>。</p>
+<p>StarRocks架构简洁，采用了<strong>全面向量化引擎</strong>，并且使用了新设计的 <strong>CBO（Cost Based Optimizer）优化器</strong>，<strong>查询速度（尤其是关联查询）远超同类产品</strong>（直接报了 ClickHouse 的身份证号）。</p>
+<h2 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h2><h3 id="OLAP-多维分析"><a href="#OLAP-多维分析" class="headerlink" title="OLAP 多维分析"></a>OLAP 多维分析</h3><p>利用 StarRocks 的 MPP 和向量化执行引擎，可以在雪花模型、星型模型、星座模型等场景下，能够灵活的配置进行多维化组合分析。</p>
+<h3 id="实时数据仓库"><a href="#实时数据仓库" class="headerlink" title="实时数据仓库"></a>实时数据仓库</h3><p>StarRocks 设计和实现了 Primary-Key 模型，能够在秒级内同步数据库的变化，以此可以构建实时数仓的基础。</p>
+<h3 id="高并发查询"><a href="#高并发查询" class="headerlink" title="高并发查询"></a>高并发查询</h3><p>StarRocks 通过良好的数据分布特性，灵活的索引以及物化视图等特性，可以解决面向用户侧的分析场景。</p>
+<h3 id="统一分析"><a href="#统一分析" class="headerlink" title="统一分析"></a>统一分析</h3><ul>
+<li>通过使用一套系统解决多维分析、高并发查询、预计算、实时分析查询等场景，降低系统复杂度和多技术栈开发与维护成本。</li>
+<li>使用 StarRocks 统一管理数据湖和数据仓库，将高并发和实时性要求很高的业务放在 StarRocks 中分析，也可以使用 External Catalog 和外部表进行数据湖上的分析。</li>
+</ul>
+<h2 id="系统架构"><a href="#系统架构" class="headerlink" title="系统架构"></a>系统架构</h2><h3 id="架构图"><a href="#架构图" class="headerlink" title="架构图"></a>架构图</h3><p>StarRocks整个系统只包含两种进程，分别是 FE（Frontend） 和 BE（Backend）。</p>
+<p>FE：</p>
+<ul>
+<li>前端节点，负责管理元数据，管理客户端连接，进行查询规划、查询调度等任务</li>
+<li>每个 FE 节点都会在<strong>内存</strong>中保存一份元数据，依次可以达到每个节点都能够提供无差别服务</li>
+<li>FE 中包含三种角色：<ul>
+<li>Leader：Leader 通过 Follower 选举产生，选举方式采用类 Paxos 的 Berkeley DB Java Edition协议。Leader 节点提供元数据读写服务，<strong>只有</strong>Leader 才有元数据的写权限。</li>
+<li>Follower：只有元数据的读权限，通过同步 Leader 的元数据日志来异步地同步元数据。Follower 还参与 Leader 。</li>
+<li>Observer：主要用于扩展集群的查询并发能力，与 Follower 相同的是一样同步 Leader 的元数据日志，与 Follower 不同的是不参与选举。</li>
+</ul>
+</li>
+</ul>
+<p>BE：</p>
+<ul>
+<li>BE 是后端节点，负责数据的存储，执行 SQL的任务</li>
+<li>FE 按照一定的策略将数据分配到 BE 节点，BE 会导入数据，形成三个副本存储，并生成相关索引</li>
+<li>执行 SQL 的时候，会先将 SQL 解析成逻辑执行单元， 然后在各个 BE 节点上执行物理执行单元，这样的好处是可以达到不同的机器实现本地读取计算数据，避免数据的拷贝和传输，从而提高查询效率</li>
+</ul>
+<h3 id="数据管理"><a href="#数据管理" class="headerlink" title="数据管理"></a>数据管理</h3>
             </div>
 
             
@@ -217,21 +231,21 @@
             
                 <div class="article-nav">
                     
-                        <div class="article-prev">
-                            <a class="prev"
-                               rel="prev"
-                               href="/2023/07/29/sr01-intro/"
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/07/28/hello-world/"
                             >
-                            <span class="left arrow-icon flex-center">
-                              <i class="fas fa-chevron-left"></i>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-item">Next posts</span>
                             </span>
-                                <span class="title flex-center">
-                                <span class="post-nav-title-item">StarRocks01 介绍StarRocks</span>
-                                <span class="post-nav-item">Prev posts</span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
                             </span>
                             </a>
                         </div>
-                    
                     
                 </div>
             
