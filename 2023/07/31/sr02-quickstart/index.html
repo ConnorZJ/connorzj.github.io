@@ -9,7 +9,7 @@
     
     <title>
         
-            Archive: 2023 |
+            StarRocks01 快速开始 |
         
         Connor&#39;s Tech Home
     </title>
@@ -84,7 +84,7 @@
                         </li>
                     
                         <li class="menu-item">
-                            <a class="active"
+                            <a class=""
                                href="/archives"
                             >
                                 ARCHIVES
@@ -126,7 +126,7 @@
                 </li>
             
                 <li class="drawer-menu-item flex-center">
-                    <a class="active"
+                    <a class=""
                        href="/archives">ARCHIVES</a>
                 </li>
             
@@ -151,45 +151,121 @@
 
                 
                     <div class="fade-in-down-animation">
-    <div class="archive-container ">
-        
-<div class="archive-list-container">
-    
-        <section class="archive-item">
-            <div class="archive-item-header">
-                <span class="archive-year">2023</span>
-                <span class="archive-year-post-count">[3]</span>
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">StarRocks01 快速开始</span>
             </div>
-            <ul class="article-list">
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2023/07/31/sr02-quickstart/"
-                        >StarRocks01 快速开始</a>
-                        <span class="article-date">07-31</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2023/07/29/sr01-intro/"
-                        >StarRocks01 介绍StarRocks</a>
-                        <span class="article-date">07-29</span>
-                    </li>
-                
-                    <li class="article-item">
-                        <a class="article-title"
-                           href="/2023/07/28/hello-world/"
-                        >Hello World</a>
-                        <span class="article-date">07-28</span>
-                    </li>
-                
-            </ul>
-        </section>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="/images/21690630161_.pic.jpg">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">ConnorXiong</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2023-07-31 21:39:05</span>
+        <span class="mobile">2023-07-31 21:39</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2023-07-31 21:46:23</span>
+    </span>
+    
+    
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>139 Words</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>1 Mins</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
     
 </div>
 
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h2 id="本地部署-StarRocks"><a href="#本地部署-StarRocks" class="headerlink" title="本地部署 StarRocks"></a>本地部署 StarRocks</h2><blockquote>
+<p>由于这里是学习 StarRocks，所以使用 Docker 来部署一个单机版的服务</p>
+</blockquote>
+<p>本地部署 StarRocks，一共需要启动 FE 和 BE 两个进程。</p>
+<h3 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像"></a>拉取镜像</h3><p>执行命令<code>docker run starrocks/allin1-ubuntu</code></p>
+<h3 id="启动-StarRocks"><a href="#启动-StarRocks" class="headerlink" title="启动 StarRocks"></a>启动 StarRocks</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -p 9030:9030 -p 8030:8030 -p 8040:8040 -itd starrocks/allin1-ubuntu</span><br></pre></td></tr></table></figure>
+
+<p>执行以上命令即可启动 StarRocks 的 FE 和 BE，其中 9030 是 StarRocks 的 MySQL 协议通信端口，8030 和 8040 分别是 FE 和 BE 的 HTTP 通信端口，如果有端口冲突的话需要自行修改。</p>
+<h3 id="连接-StarRocks"><a href="#连接-StarRocks" class="headerlink" title="连接 StarRocks"></a>连接 StarRocks</h3>
+            </div>
+
+            
+
+            
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/07/29/sr01-intro/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">StarRocks01 介绍StarRocks</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2-StarRocks"><span class="nav-number">1.</span> <span class="nav-text">本地部署 StarRocks</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F"><span class="nav-number">1.1.</span> <span class="nav-text">拉取镜像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8-StarRocks"><span class="nav-number">1.2.</span> <span class="nav-text">启动 StarRocks</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9E%E6%8E%A5-StarRocks"><span class="nav-number">1.3.</span> <span class="nav-text">连接 StarRocks</span></a></li></ol></li></ol>
     </div>
 </div>
+
+            </div>
+        
+    </div>
+</div>
+
 
                 
             </div>
@@ -238,6 +314,23 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-bottom-side-tools">
@@ -349,6 +442,20 @@
 
 
 <div class="post-scripts pjax">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
     
 </div>
 
